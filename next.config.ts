@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  output: 'export',      // Génère un site statique (HTML) pour GitLab
+  images: {
+    unoptimized: true,   // Obligatoire pour les images sur GitLab Pages
+  },
 };
 
 export default nextConfig;
