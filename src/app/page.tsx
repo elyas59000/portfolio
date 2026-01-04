@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Code2, Database, Terminal, ChevronDown, Figma, Globe, X, Send } from 'lucide-react';
+// 👇 J'ai ajouté 'FileText' dans les imports pour l'icône du CV
+import { Github, Linkedin, Mail, ExternalLink, Code2, Database, Terminal, ChevronDown, Figma, Globe, X, Send, FileText } from 'lucide-react';
 
 // --- TES DONNÉES ---
 const portfolioData = {
@@ -11,7 +12,9 @@ const portfolioData = {
     accroche: "Futur développeur Fullstack & Admin Sys, passionné par l'architecture logicielle et le DevOps.",
     email: "elyas.rabhiu.etu@univ-lille.fr",
     linkedin: "https://www.linkedin.com/in/elyas-rabhiu-89b72a382/",
-    github: "https://github.com/TonPseudo", // Mets ton vrai pseudo GitHub ici
+    github: "https://github.com/TonPseudo", 
+    // 👇 Le lien vers ton CV (Attention au préfixe GitLab !)
+    cv: "/portfolio-43c6d4/cv.pdf" 
   },
   formation: [
     {
@@ -40,7 +43,6 @@ const portfolioData = {
       tech: ["Java", "JavaFX", "Algorithmique", "Graphes", "UML"],
       repo: "https://gitlab.univ-lille.fr/sae2.01-2.02/2025/A5",
       demo: "https://www.figma.com/design/bF0yAhsahym878TCPDJnVv/maquette-du-projet-appariement?node-id=0-1&t=eDy4Y36cYSRr2FbW-1",
-      // 👇 IMPORTANT : Le chemin inclut maintenant le nom de ton projet GitLab
       image: "/portfolio-43c6d4/sae-appariement.png"
     },
     {
@@ -50,18 +52,16 @@ const portfolioData = {
       tech: ["Java 17", "JavaFX", "JUnit 5", "MVC", "Git"],
       repo: "#", 
       demo: "https://labyrintheweb.netlify.app/#",
-      // 👇 IMPORTANT : Le chemin inclut maintenant le nom de ton projet GitLab
       image: "/portfolio-43c6d4/labyrinthe.png" 
     },
     {
       id: 3,
       title: "Admin Serveur Matrix Synapse",
-      // Description professionnelle détaillée
       desc: "Déploiement et sécurisation d'un serveur de messagerie décentralisée sous Debian. Migration de base de données (SQLite vers PostgreSQL), configuration réseau via Tunnels SSH et résolution d'incidents critiques (Logs, YAML).",
       tech: ["Debian CLI", "PostgreSQL", "Matrix Synapse", "SSH", "Systemd"],
       repo: "#", 
       demo: null,
-      image: null // Pas d'image -> le texte remontera automatiquement
+      image: null 
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ const portfolioData = {
       tech: ["Next.js", "React", "Tailwind", "CI/CD"],
       repo: "https://gitlab.univ-lille.fr/elyas.rabhiu.etu/elyas-rabhiu",
       demo: null,
-      image: null // Pas d'image -> le texte remontera automatiquement
+      image: null
     }
   ]
 };
@@ -123,12 +123,27 @@ export default function Portfolio() {
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur shadow-sm z-50 p-4 border-b border-slate-200">
         <div className="max-w-5xl mx-auto flex justify-between items-center font-bold text-blue-600">
           <span className="text-xl">{portfolioData.perso.nom}</span>
-          <div className="space-x-6 text-slate-600 hidden md:block font-medium">
-            <a href="#accueil" className="hover:text-blue-600 transition">Accueil</a>
-            <a href="#formation" className="hover:text-blue-600 transition">Formation</a>
-            <a href="#projets" className="hover:text-blue-600 transition">Projets</a>
-            <a href="#contact" className="hover:text-blue-600 transition">Contact</a>
+          
+          <div className="flex items-center gap-6">
+            {/* Liens de navigation (cachés sur mobile) */}
+            <div className="space-x-6 text-slate-600 hidden md:block font-medium">
+              <a href="#accueil" className="hover:text-blue-600 transition">Accueil</a>
+              <a href="#formation" className="hover:text-blue-600 transition">Formation</a>
+              <a href="#projets" className="hover:text-blue-600 transition">Projets</a>
+              <a href="#contact" className="hover:text-blue-600 transition">Contact</a>
+            </div>
+
+            {/* BOUTON CV (Visible tout le temps) */}
+            <a 
+              href={portfolioData.perso.cv} 
+              target="_blank" 
+              className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm shadow-md"
+            >
+              <FileText size={18} /> 
+              <span className="hidden sm:inline">Mon CV</span>
+            </a>
           </div>
+
         </div>
       </nav>
 
