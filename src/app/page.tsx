@@ -11,7 +11,7 @@ const portfolioData = {
     accroche: "Futur développeur Fullstack & Admin Sys, passionné par l'architecture logicielle et le DevOps.",
     email: "elyas.rabhiu.etu@univ-lille.fr",
     linkedin: "https://www.linkedin.com/",
-    github: "https://github.com/TonPseudo", // Remplace par ton vrai pseudo
+    github: "https://github.com/TonPseudo", // Mets ton vrai pseudo GitHub ici
   },
   formation: [
     {
@@ -40,34 +40,37 @@ const portfolioData = {
       tech: ["Java", "JavaFX", "Algorithmique", "Graphes", "UML"],
       repo: "https://gitlab.univ-lille.fr/sae2.01-2.02/2025/A5",
       demo: "https://www.figma.com/design/bF0yAhsahym878TCPDJnVv/maquette-du-projet-appariement?node-id=0-1&t=eDy4Y36cYSRr2FbW-1",
-      image: "/sae-appariement.png"
+      // 👇 IMPORTANT : Le chemin inclut maintenant le nom de ton projet GitLab
+      image: "/portfolio-43c6d4/sae-appariement.png"
     },
     {
       id: 2,
       title: "Jeu de Labyrinthe Procédural",
       desc: "Jeu complet en JavaFX avec génération procédurale de niveaux. En charge de la Qualité Logicielle : mise en place de tests unitaires (JUnit 5, Réflexion) garantissant 70% de couverture et la solvabilité des cartes (BFS).",
       tech: ["Java 17", "JavaFX", "JUnit 5", "MVC", "Git"],
-      repo: "fdskjl", 
-      demo: "https://labyrintheweb.netlify.app/#", // Mets le lien du site ici
-      image: "/labyrinthe.png" 
+      repo: "#", 
+      demo: "https://labyrintheweb.netlify.app/#",
+      // 👇 IMPORTANT : Le chemin inclut maintenant le nom de ton projet GitLab
+      image: "/portfolio-43c6d4/labyrinthe.png" 
     },
     {
       id: 3,
       title: "Admin Serveur Matrix Synapse",
+      // Description professionnelle détaillée
       desc: "Déploiement et sécurisation d'un serveur de messagerie décentralisée sous Debian. Migration de base de données (SQLite vers PostgreSQL), configuration réseau via Tunnels SSH et résolution d'incidents critiques (Logs, YAML).",
       tech: ["Debian CLI", "PostgreSQL", "Matrix Synapse", "SSH", "Systemd"],
       repo: "#", 
       demo: null,
-      image: null // Pas d'image demandée
+      image: null // Pas d'image -> le texte remontera automatiquement
     },
     {
       id: 4,
       title: "Mon Portfolio",
-      desc: "Ce site web, développé avec Next.js et Tailwind CSS pour présenter mon parcours et mes compétences. Déploiement automatisé via Pipeline CI/CD.",
+      desc: "Ce site web, développé avec Next.js et Tailwind CSS pour présenter mon parcours et mes compétences. Déploiement automatisé via Pipeline CI/CD sur GitLab Pages.",
       tech: ["Next.js", "React", "Tailwind", "CI/CD"],
       repo: "https://gitlab.com/",
       demo: null,
-      image: null // Pas d'image demandée
+      image: null // Pas d'image -> le texte remontera automatiquement
     }
   ]
 };
