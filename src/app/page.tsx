@@ -10,7 +10,7 @@ const portfolioData = {
     titre: "Étudiant BUT Informatique",
     accroche: "Futur développeur Fullstack & Admin Sys, passionné par l'architecture logicielle et le DevOps.",
     email: "elyas.rabhiu.etu@univ-lille.fr",
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/elyas-rabhiu-89b72a382/",
     github: "https://github.com/TonPseudo", // Mets ton vrai pseudo GitHub ici
   },
   formation: [
@@ -68,7 +68,7 @@ const portfolioData = {
       title: "Mon Portfolio",
       desc: "Ce site web, développé avec Next.js et Tailwind CSS pour présenter mon parcours et mes compétences. Déploiement automatisé via Pipeline CI/CD sur GitLab Pages.",
       tech: ["Next.js", "React", "Tailwind", "CI/CD"],
-      repo: "https://gitlab.com/",
+      repo: "https://gitlab.univ-lille.fr/elyas.rabhiu.etu/elyas-rabhiu",
       demo: null,
       image: null // Pas d'image -> le texte remontera automatiquement
     }
