@@ -13,7 +13,7 @@ const portfolioData = {
     email: "elyas.rabhiu.etu@univ-lille.fr",
     linkedin: "https://www.linkedin.com/in/portfolio-89b72a382/",
     github: "https://github.com/elyas59000", 
-    cv: "/portfolio/cv.pdf"
+    cv: "./cv.pdf"
   },
   formation: [
     {
@@ -47,7 +47,7 @@ const portfolioData = {
       tech: ["Laravel", "PHP", "Eloquent ORM", "MySQL", "Architecture MVC"],
       repo: "#",
       demo: null,
-      image: "/portfolio/supermoto.png",
+      image: "./supermoto.png",
       contexte: "Développement d'une application métier centralisée répondant à des contraintes strictes d'intégrité des données.",
       equipe: "Projet mené en totale autonomie.",
       role: "Modélisation de la base de données (9 tables), création des migrations, sécurisation des routes et implémentation des contrôleurs CRUD pour l'ensemble des entités.",
@@ -122,7 +122,7 @@ const portfolioData = {
       tech: ["Debian CLI", "PostgreSQL", "Matrix Synapse", "Nginx", "Tunnels SSH"],
       repo: "#",
       demo: null,
-      image: "/portfolio/matrix.jpg",
+      image: "./matrix.jpg",
       contexte: "Mise en production d'une infrastructure réseau pour héberger un service de communication critique.",
       equipe: "Travail en binome avec revues techniques.",
       role: "Responsable de l'installation sous Debian, de la migration d'une base de données SQLite vers PostgreSQL, et de la configuration du reverse proxy Nginx.",
@@ -142,7 +142,7 @@ const portfolioData = {
       tech: ["Java 17", "JavaFX", "JUnit 5", "Algorithme BFS", "Git"],
       repo: "#",
       demo: "https://labyrintheweb.netlify.app/#",
-      image: "/portfolio/labyrinthe.png",
+      image: "./labyrinthe.png",
       contexte: "Création d'un moteur de jeu nécessitant une couverture de tests exhaustive et des algorithmes de parcours fiables.",
       equipe: "Équipe de 3 développeurs sous méthodologie Agile.",
       role: "En charge de la Qualité Logicielle. Implémentation du moteur de tests unitaires et de l'algorithme BFS pour certifier la solvabilité des niveaux.",
@@ -162,7 +162,7 @@ const portfolioData = {
       tech: ["Java", "JavaFX", "Algorithmique des Graphes", "UML", "Figma"],
       repo: "https://gitlab.univ-lille.fr/sae2.01-2.02/2025/A5",
       demo: "https://www.figma.com/design/bF0yAhsahym878TCPDJnVv/maquette-du-projet-appariement?node-id=0-1&t=eDy4Y36cYSRr2FbW-1",
-      image: "/portfolio/sae-appariement.png",
+      image: "./sae-appariement.png",
       contexte: "Développement d'un outil d'aide à la décision basé sur des structures de graphes bipartis valués.",
       equipe: "Groupe de 4 développeurs.",
       role: "Conception de l'expérience utilisateur (UX/UI) via Figma, développement des vues JavaFX et intégration avec le moteur algorithmique backend.",
