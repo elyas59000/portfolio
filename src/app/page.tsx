@@ -1,15 +1,15 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Code2, Database, Terminal, ChevronDown, ChevronUp, Figma, Globe, X, Send, FileText, Cpu, Gamepad2, Dumbbell, Users, CheckCircle2, AlertTriangle, Lightbulb } from 'lucide-react';
+import { Github, Linkedin, Mail, Code2, Database, Terminal, Figma, Globe, X, Send, FileText, Cpu, Gamepad2, Dumbbell, Plane, Book } from 'lucide-react';
 
 // --- DONNÉES PROFESSIONNELLES ---
 const portfolioData = {
   perso: {
     nom: "Elyas Rabhiu",
-    titre: "Développeur Fullstack & Administrateur Système",
-    accroche: "Étudiant en BUT Informatique, passionné par l'architecture logicielle, la conception de backends robustes et l'optimisation DevOps.",
-    orientation: "Actuellement à la recherche d'une opportunité en alternance ou d'un stage technique. Mon objectif est de mettre à profit mes compétences en frameworks modernes (Laravel, React) et en gestion d'infrastructures pour répondre à des problématiques métiers concrètes.",
+    titre: "Développeur Fullstack",
+    accroche: "Étudiant en 3éme année de B.U.T Informatique je dispose de compétence en conception et réalisation d'application",
+    orientation: "Actuellement à la recherche d'une opportunité en alternance ou d'un stage technique. Mon objectif est de mettre à profit mes compétences acquise durant mes 3 derniére années de B.U.T informatique. Par la suite, j'envisage d'évoluer vers un metier de DevOps ou d'ingénieur logiciel avec une possible poursuite d'étude en bac +5 ",
     email: "elyas.rabhiu.etu@univ-lille.fr",
     linkedin: "https://www.linkedin.com/in/portfolio-89b72a382/",
     github: "https://github.com/elyas59000", 
@@ -30,150 +30,78 @@ const portfolioData = {
     }
   ],
   skills: [
-    { category: "Frontend", items: ["React", "Next.js", "Tailwind CSS", "TypeScript", "JavaFX"], icon: <Code2 size={24} /> },
-    { category: "Backend & SGBD", items: ["Laravel", "PHP (Eloquent)", "Java", "Node.js (Express)", "PostgreSQL"], icon: <Database size={24} /> },
-    { category: "Système & DevOps", items: ["Linux (Debian/ZorinOS)", "Bash", "Configuration SSH", "Git / GitLab CI", "Docker"], icon: <Terminal size={24} /> },
+    { category: "Frontend", items: ["React", "html","css", "TypeScript", "JavaFX"], icon: <Code2 size={24} /> },
+    { category: "Backend & SGBD", items: ["Laravel", "PHP (Eloquent)", "Java", "Node.js (Express)", "PostgreSQL", "Spring", "J2E"], icon: <Database size={24} /> },
+    { category: "Système & DevOps", items: ["Linux (Debian/ZorinOS)", "Bash", "Configuration SSH", "Git / GitLab CI", "Docker", "Vagrant","C", "Go"], icon: <Terminal size={24} /> },
   ],
   hobbies: [
-    { nom: "Veille Technologique", desc: "Suivi actif des écosystèmes web (Next.js, Laravel 11).", icon: <Cpu size={20} /> },
-    { nom: "Gaming", desc: "Esprit d'équipe et vision stratégique sur jeux compétitifs.", icon: <Gamepad2 size={20} /> },
-    { nom: "Sport", desc: "Discipline, régularité et résilience (Musculation & Boxe).", icon: <Dumbbell size={20} /> },
+    { nom: "Voyage", desc: "Découverte de nouvelles cultures et de nouveaux paysages.", icon: <Plane size={20} /> },
+    { nom: "Lecture", desc: "M'évader dans des mondes imaginaires à travers la lecture.", icon: <Book size={20} /> },
+    { nom: "Sport", desc: "Discipline, régularité (Musculation & Boxe).", icon: <Dumbbell size={20} /> },
   ],
   projects: [
     {
       id: 1,
       title: "Backend de Gestion 'Supermoto-garage'",
-      desc: "Conception et réalisation complète d'un système de gestion de garage structuré autour d'une base de données relationnelle de 9 tables.",
-      tech: ["Laravel", "PHP", "Eloquent ORM", "MySQL", "Architecture MVC"],
-      repo: "#",
+      desc: "Conception et réalisation complète d'un système de gestion de garage structuré autour d'une base de données ",
+      tech: ["Laravel", "PHP", "Eloquent ORM", "MySQL", "Architecture MVC", "algorithme FIFO"],
+      repo: "https://github.com/elyas59000/supermoto-garage",
       demo: null,
-      image: "/portfolio/supermoto.png",
-      contexte: "Développement d'une application métier centralisée répondant à des contraintes strictes d'intégrité des données.",
-      equipe: "Projet mené en totale autonomie.",
-      role: "Modélisation de la base de données (9 tables), création des migrations, sécurisation des routes et implémentation des contrôleurs CRUD pour l'ensemble des entités.",
-      resultats: "Un backend performant et modulaire permettant une traçabilité complète des interventions, des stocks de pièces et des fiches clients.",
-      hardSkills: ["Maîtrise du pattern MVC avec le framework Laravel.", "Conception de requêtes complexes et relations via Eloquent ORM.", "Gestion avancée des contraintes d'intégrité référentielle."],
-      softSkills: ["Autonomie : Capacité à mener un projet technique de bout en bout.", "Rigueur : Structuration propre et maintenable du code."],
-      analyseReflexive: {
-        appris: "L'utilisation d'un framework moderne accélère considérablement le développement sécurisé de structures de données complexes.",
-        difficultes: "Assurer la cohérence du CRUD sur des tables fortement interdépendantes. J'ai surmonté ce défi en implémentant des transactions de base de données, évitant ainsi les écritures partielles en cas d'erreur.",
-        differemment: "Pour une future itération, j'envisagerais de concevoir une API REST découplée afin de faciliter l'intégration avec n'importe quel client frontend moderne."
-      }
+      image: "/portfolio/supermoto.png"
     },
     {
       id: 2,
       title: "Tales of Danmaku - Moteur de Jeu Web",
       desc: "Développement d'un jeu de type Shoot'em up (Bullet Hell) coopératif en temps réel, avec moteur de rendu 2D et synchronisation réseau.",
-      tech: ["TypeScript", "Canvas HTML5", "Node.js", "Socket.IO", "Docker"],
-      repo: "https://gitlab.univ-lille.fr/jsae/2025-2026/projets/groupe-h/equipe-1/tales-of-danmaku",
+      tech: ["TypeScript", "Canvas HTML5","css", "Node.js", "Socket.IO", "Docker"],
+      repo: "https://github.com/elyas59000/tales-of-danmaku",
       demo: null,
-      image: "./maintitle.png",
-      contexte: "Création from scratch d'un moteur de jeu 2D multijoueur exigeant de hautes performances d'affichage (des milliers de projectiles) et une faible latence.",
-      equipe: "Équipe de 3 développeurs.",
-      role: "Développement des interfaces interactives (HUD in-game, menus dynamiques, gestion des inputs) et intégration complète des assets visuels et audios.",
-      resultats: "Un jeu fluide, modulable grâce à un moteur de patterns paramétrique, et doté d'un mode coopératif stable reposant sur une architecture client-serveur optimisée.",
-      hardSkills: [
-        "Programmation orientée objet avancée et typage strict (TypeScript).",
-        "Développement de boucle de rendu (Game Loop) sur Canvas HTML5.",
-        "Synchronisation d'états multijoueur et gestion de la latence via WebSockets."
-      ],
-      softSkills: [
-        "Proactivité : Préparation et conception des assets visuels en amont de la phase de code.",
-        "Communication : Négociation et obtention des droits d'utilisation musicaux auprès d'un artiste indépendant (ZahranW).",
-        "Répartition des tâches : Collaboration efficace entre la logique serveur, le gameplay et l'interface."
-      ],
-      analyseReflexive: {
-        appris: "J'ai compris l'importance de l'optimisation réseau dans le jeu vidéo : utiliser le serveur comme simple relais et simuler la logique localement permet d'économiser drastiquement la bande passante.",
-        difficultes: "Implémenter des tests unitaires sur des classes (ennemis, projectiles) fortement couplées au rendu graphique. Nous avons résolu cela en isolant et en testant uniquement la logique mathématique pure (déplacements, calculs de score).",
-        differemment: "Pour la suite, j'automatiserais davantage la génération des vagues d'ennemis via des fichiers de configuration (JSON/YAML) pour éviter le scripting manuel et accélérer l'ajout de contenu."
-      }
+      image: "/portfolio/maintitle.png"
     },
     {
       id: 3,
       title: "API RESTful Backend 'EcoDrop'",
       desc: "Développement d'une API backend sécurisée et multi-format (JSON/XML) pour la gestion et la gamification d'un réseau de recyclage.",
       tech: ["Java EE", "Architecture REST", "SQL Avancé", "Sécurité RBAC", "Bruno"],
-      repo: "#", 
+      repo: "https://github.com/elyas59000/SAE-REST", 
       demo: null,
-      image: "./ecodrop.png", 
-      contexte: "Création du cœur de service d'une plateforme B2B/B2C permettant le suivi des points de collecte et l'établissement d'un classement des recycleurs.",
-      equipe: "Projet mené en totale autonomie.",
-      role: "Modélisation de la base de données (5 tables), implémentation du pattern DAO, développement des endpoints, et sécurisation via tokens avec gestion des rôles (Admin/User).",
-      resultats: "Une API Stateless performante, respectant strictement les standards HTTP (201, 204, 401, 403, 409) et couverte par une suite de tests automatisés.",
-      hardSkills: [
-        "Conception d'architecture REST (Négociation de contenu, verbes sémantiques).",
-        "Développement de requêtes SQL complexes (Jointures, COALESCE, sous-requêtes d'insertion).",
-        "Sécurisation des routes et contrôle d'accès basé sur les rôles (RBAC)."
-      ],
-      softSkills: [
-        "Anticipation : Prévention des failles de concurrence logicielle au niveau de la base de données.",
-        "Rigueur de test : Vérification systématique des cas d'erreurs (4xx) via l'outil de test Bruno."
-      ],
-      analyseReflexive: {
-        appris: "J'ai compris l'importance de respecter la sémantique stricte des codes de retour HTTP pour garantir une communication claire avec les applications clientes.",
-        difficultes: "Garantir qu'une borne de collecte ne puisse pas déborder lors de requêtes simultanées. J'ai résolu ce problème de concurrence en déportant la logique métier (calcul de la capacité maximale) directement dans la condition de la requête SQL d'insertion, interdisant l'écriture en cas de dépassement.",
-        differemment: "Pour faire évoluer ce service vers un standard de production, je remplacerais l'authentification basique par l'implémentation de JSON Web Tokens (JWT) et je générerais une documentation interactive via Swagger/OpenAPI."
-      }
+      image: "/portfolio/ecodrop.png"
     },
     {
       id: 4,
       title: "Déploiement Serveur Matrix Synapse",
       desc: "Installation, sécurisation et maintenance opérationnelle d'un serveur de messagerie instantanée décentralisé sous environnement Linux.",
       tech: ["Debian CLI", "PostgreSQL", "Matrix Synapse", "Nginx", "Tunnels SSH"],
-      repo: "#",
+      repo: "https://github.com/elyas59000/SAE-DEPLOIEMENT-MATRIX",
       demo: null,
-      image: "/portfolio/matrix.jpg",
-      contexte: "Mise en production d'une infrastructure réseau pour héberger un service de communication critique.",
-      equipe: "Travail en binome avec revues techniques.",
-      role: "Responsable de l'installation sous Debian, de la migration d'une base de données SQLite vers PostgreSQL, et de la configuration du reverse proxy Nginx.",
-      resultats: "Un serveur de communication parfaitement fonctionnel, sécurisé et accessible depuis l'extérieur.",
-      hardSkills: ["Administration système Linux avancée en ligne de commande.", "Configuration réseau, proxying et gestion des certificats SSL.", "Migration de bases de données en environnement de production."],
-      softSkills: ["Résolution de problèmes : Diagnostic méthodique via l'analyse des logs système.", "Adaptabilité : Prise en main rapide de documentations techniques denses."],
-      analyseReflexive: {
-        appris: "L'importance cruciale de la sécurité périphérique et de la précision dans la configuration des règles de routage.",
-        difficultes: "Lors des tests, les connexions externes via les tunnels SSH échouaient. L'analyse des configurations m'a permis d'identifier qu'il manquait l'adresse '0.0.0.0' dans les paramètres de transfert local SSH (.ssh/config), étape indispensable pour autoriser le trafic entrant.",
-        differemment: "Je privilégierais aujourd'hui une approche par conteneurisation (Docker Compose) pour automatiser et isoler les différents services (Synapse, Postgres, Nginx)."
-      }
+      image: "/portfolio/matrix.jpg"
     },
     {
       id: 5,
-      title: "Jeu de Labyrinthe Procédural",
-      desc: "Développement d'une application desktop intégrant des algorithmes de génération de cartes et une validation stricte de la qualité du code.",
-      tech: ["Java 17", "JavaFX", "JUnit 5", "Algorithme BFS", "Git"],
-      repo: "#",
+      title: "Jeu de Labyrinthe",
+      desc: "Développement d'un jeu intégrant des algorithmes de génération de labyrinthe aléatoire.",
+      tech: ["Java", "JavaFX", "JUnit", "Git"],
+      repo: "https://github.com/elyas59000/projet-labyrinthe",
       demo: "https://labyrintheweb.netlify.app/#",
-      image: "/portfolio/labyrinthe.png",
-      contexte: "Création d'un moteur de jeu nécessitant une couverture de tests exhaustive et des algorithmes de parcours fiables.",
-      equipe: "Équipe de 3 développeurs sous méthodologie Agile.",
-      role: "En charge de la Qualité Logicielle. Implémentation du moteur de tests unitaires et de l'algorithme BFS pour certifier la solvabilité des niveaux.",
-      resultats: "Couverture de tests supérieure à 70% et un générateur de labyrinthe garantissant l'absence d'impasses bloquantes.",
-      hardSkills: ["Implémentation d'algorithmes de parcours de graphes (BFS).", "Mise en place de tests unitaires avancés (utilisation de la réflexion Java).", "Conception MVC en environnement JavaFX."],
-      softSkills: ["Travail en équipe : Synchronisation du code via Git.", "Communication technique : Explication des choix algorithmiques à l'équipe."],
-      analyseReflexive: {
-        appris: "Adopter une approche orientée tests (TDD) dès le début du projet permet d'identifier les régressions instantanément et facilite le refactoring.",
-        difficultes: "Empêcher l'algorithme procédural de créer des boucles infinies. Nous avons modélisé un cycle de vie strict pour la génération avec des conditions d'arrêt précises.",
-        differemment: "L'intégration d'un pipeline CI/CD (GitLab CI) aurait permis d'automatiser l'exécution des tests à chaque commit."
-      }
+      image: "/portfolio/labyrinthe.png"
     },
     {
       id: 6,
+      title: "Dotes&Boxes",
+      desc: "Application d'optimisation permettant d'associer automatiquement des étudiants à des universités européennes selon de multiples contraintes.",
+      tech: ["Java", "méthode agile"],
+      repo: "#",
+      demo: "",
+      image: ""
+    },
+    {
+      id: 7,
       title: "Moteur d'Appariement par Graphes",
       desc: "Application d'optimisation permettant d'associer automatiquement des étudiants à des universités européennes selon de multiples contraintes.",
       tech: ["Java", "JavaFX", "Algorithmique des Graphes", "UML", "Figma"],
-      repo: "https://gitlab.univ-lille.fr/sae2.01-2.02/2025/A5",
+      repo: "https://github.com/elyas59000/SAE-appariement",
       demo: "https://www.figma.com/design/bF0yAhsahym878TCPDJnVv/maquette-du-projet-appariement?node-id=0-1&t=eDy4Y36cYSRr2FbW-1",
-      image: "/portfolio/sae-appariement.png",
-      contexte: "Développement d'un outil d'aide à la décision basé sur des structures de graphes bipartis valués.",
-      equipe: "Groupe de 4 développeurs.",
-      role: "Conception de l'expérience utilisateur (UX/UI) via Figma, développement des vues JavaFX et intégration avec le moteur algorithmique backend.",
-      resultats: "Une interface fluide permettant de traiter et d'afficher instantanément les associations optimales pour des centaines de profils.",
-      hardSkills: ["Maquettage UI/UX professionnel.", "Modélisation métier via diagrammes UML.", "Manipulation de structures de données complexes."],
-      softSkills: ["Gestion du temps : Respect d'un planning de livraisons itératives.", "Négociation technique : Alignement des besoins IHM avec les contraintes de performance du backend."],
-      analyseReflexive: {
-        appris: "La traduction de besoins algorithmiques abstraits en une interface utilisateur claire et intuitive.",
-        difficultes: "Éviter que les calculs complexes ne gèlent l'interface graphique. Problème résolu par le traitement asynchrone des tâches (découplage des threads).",
-        differemment: "Allouer plus de temps à la phase de conception architecturale (UML) en amont pour éviter les redéfinitions de classes en cours de développement."
-      }
+      image: "/portfolio/sae-appariement.png"
     }
   ]
 };
@@ -184,12 +112,6 @@ export default function Portfolio() {
   const [message, setMessage] = useState('');
   const [senderEmail, setSenderEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
-  const [expandedProjects, setExpandedProjects] = useState<Record<number, boolean>>({});
-
-  const toggleProject = (id: number) => {
-    setExpandedProjects(prev => ({ ...prev, [id]: !prev[id] }));
-  };
 
   const handleSendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -321,121 +243,57 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* PROJETS & RETOURS D'EXPÉRIENCE */}
+      {/* PROJETS */}
       <section id="projets" className="py-20 bg-gray-50/50 backdrop-blur-sm px-4 relative z-10 border-t border-gray-200">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold text-gray-800 tracking-tight">Réalisations & Retours d'Expérience</h2>
-            <p className="text-gray-500 mt-2">Démonstration de mon savoir-faire technique et de mon approche méthodologique.</p>
+            <h2 className="text-4xl font-extrabold text-gray-800 tracking-tight">Réalisations Techniques</h2>
+            <p className="text-gray-500 mt-2">Aperçu de mes projets et développements.</p>
           </div>
           
-          {/* CORRECTION ICI : Suppression de "items-start" pour que les cartes aient la même hauteur */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {portfolioData.projects.map((p) => {
-              const isExpanded = !!expandedProjects[p.id];
-              return (
-                <div key={p.id} className="group bg-white rounded-3xl border border-gray-200 shadow-sm overflow-hidden hover:shadow-xl hover:shadow-emerald-100/50 transition-all duration-500 flex flex-col">
-                  
-                  {/* IMAGE EN BANNIÈRE HAUTE */}
-                  {p.image && (
-                    <div className="w-full aspect-video overflow-hidden border-b border-gray-100 relative bg-gray-100 shrink-0">
-                        <div className="absolute inset-0 bg-emerald-900/0 group-hover:bg-emerald-900/10 transition z-10"></div>
-                        <img 
-                          src={p.image} 
-                          alt={p.title} 
-                          className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-700" 
-                        />
-                    </div>
-                  )}
+            {portfolioData.projects.map((p) => (
+              <div key={p.id} className="group bg-white rounded-3xl border border-gray-200 shadow-sm overflow-hidden hover:shadow-xl hover:shadow-emerald-100/50 transition-all duration-500 flex flex-col">
+                
+                {/* IMAGE EN BANNIÈRE HAUTE */}
+                {p.image && (
+                  <div className="w-full aspect-video overflow-hidden border-b border-gray-100 relative bg-gray-100 shrink-0">
+                      <div className="absolute inset-0 bg-emerald-900/0 group-hover:bg-emerald-900/10 transition z-10"></div>
+                      <img 
+                        src={p.image} 
+                        alt={p.title} 
+                        className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-700" 
+                      />
+                  </div>
+                )}
 
-                  {/* Contenu principal de la carte */}
-                  <div className="p-8 flex flex-col flex-grow">
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {p.tech.map(t => (
-                        <span key={t} className="bg-emerald-50 text-emerald-700 border border-emerald-100 px-3 py-1 text-xs font-bold rounded-full">{t}</span>
-                      ))}
-                    </div>
-
-                    <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-emerald-700 transition">{p.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-6">{p.desc}</p>
-                    
-                    {/* mt-auto pousse cette barre de boutons tout en bas de la carte, garantissant un alignement parfait */}
-                    <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-100 mt-auto">
-                      <div className="flex gap-4">
-                        {p.repo !== "#" && (
-                          <a href={p.repo} target="_blank" className="flex items-center gap-1.5 text-gray-700 font-semibold hover:text-emerald-600 text-sm transition">
-                            <Github size={17}/> Code
-                          </a>
-                        )}
-                        {p.demo && (
-                          <a href={p.demo} target="_blank" className="flex items-center gap-1.5 text-gray-700 font-semibold hover:text-purple-600 text-sm transition">
-                            {p.demo.includes('figma') ? <Figma size={17}/> : <Globe size={17}/>}
-                            {p.demo.includes('figma') ? 'Maquette' : 'Démo'}
-                          </a>
-                        )}
-                      </div>
-
-                      <button 
-                        onClick={() => toggleProject(p.id)}
-                        className="flex items-center gap-1.5 px-4 py-2 bg-gray-50 text-gray-700 border border-gray-200 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-200 transition text-xs font-bold shadow-sm"
-                      >
-                        {isExpanded ? <><ChevronUp size={14}/> Fermer</> : <><ChevronDown size={14}/> REX Technique</>}
-                      </button>
-                    </div>
+                {/* Contenu principal de la carte */}
+                <div className="p-8 flex flex-col flex-grow">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {p.tech.map(t => (
+                      <span key={t} className="bg-emerald-50 text-emerald-700 border border-emerald-100 px-3 py-1 text-xs font-bold rounded-full">{t}</span>
+                    ))}
                   </div>
 
-                  {/* PANNEAU DÉROULANT : MÉTHODE STAR / REX */}
-                  {isExpanded && (
-                    <div className="bg-gray-50 border-t border-gray-200 p-8 space-y-6 animate-in slide-in-from-top duration-300">
-                      
-                      <div className="grid grid-cols-1 gap-4">
-                        <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
-                          <h4 className="flex items-center gap-2 font-bold text-gray-800 mb-2.5 text-base">
-                            <Users size={16} className="text-emerald-600" /> Cadre & Impact
-                          </h4>
-                          <p className="text-xs text-gray-600 leading-relaxed"><strong className="text-gray-700">Contexte :</strong> {p.contexte}</p>
-                          <p className="text-xs text-gray-600 leading-relaxed mt-1"><strong className="text-gray-700">Organisation :</strong> {p.equipe}</p>
-                          <p className="text-xs text-gray-600 leading-relaxed mt-1"><strong className="text-gray-700">Responsabilités :</strong> {p.role}</p>
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-emerald-50/50 p-4 rounded-xl border border-emerald-100">
-                          <h4 className="font-bold text-emerald-800 mb-2 text-xs uppercase tracking-wider">🛠️ Hard Skills</h4>
-                          <ul className="list-disc list-inside space-y-1 text-xs text-emerald-900">
-                            {p.hardSkills.map((hs, i) => <li key={i}>{hs}</li>)}
-                          </ul>
-                        </div>
-                        <div className="bg-teal-50/50 p-4 rounded-xl border border-teal-100">
-                          <h4 className="font-bold text-teal-800 mb-2 text-xs uppercase tracking-wider">🤝 Soft Skills</h4>
-                          <ul className="list-disc list-inside space-y-1 text-xs text-teal-900">
-                            {p.softSkills.map((ss, i) => <li key={i}>{ss}</li>)}
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="bg-white p-5 rounded-xl border border-gray-200 space-y-3 shadow-sm">
-                        <h4 className="font-bold text-gray-800 flex items-center gap-2 text-base pb-1.5 border-b border-gray-100">
-                          <Lightbulb size={18} className="text-amber-500" /> Retour d'Expérience (REX)
-                        </h4>
-                        <div className="space-y-2.5">
-                          <p className="text-xs text-gray-600 leading-relaxed">
-                            <strong className="text-gray-700">💡 Apprentissages :</strong> {p.analyseReflexive.appris}
-                          </p>
-                          <p className="text-xs text-gray-600 leading-relaxed">
-                            <strong className="text-amber-700">⚠️ Résolution de problèmes :</strong> {p.analyseReflexive.difficultes}
-                          </p>
-                          <p className="text-xs text-gray-600 leading-relaxed">
-                            <strong className="text-gray-700">🔄 Vision future :</strong> {p.analyseReflexive.differemment}
-                          </p>
-                        </div>
-                      </div>
-
-                    </div>
-                  )}
+                  <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-emerald-700 transition">{p.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-6">{p.desc}</p>
+                  
+                  <div className="flex flex-wrap items-center justify-start gap-4 pt-4 border-t border-gray-100 mt-auto">
+                    {p.repo !== "#" && (
+                      <a href={p.repo} target="_blank" className="flex items-center gap-1.5 text-gray-700 font-semibold hover:text-emerald-600 text-sm transition">
+                        <Github size={17}/> Code
+                      </a>
+                    )}
+                    {p.demo && (
+                      <a href={p.demo} target="_blank" className="flex items-center gap-1.5 text-gray-700 font-semibold hover:text-purple-600 text-sm transition">
+                        {p.demo.includes('figma') ? <Figma size={17}/> : <Globe size={17}/>}
+                        {p.demo.includes('figma') ? 'Maquette' : 'Démo'}
+                      </a>
+                    )}
+                  </div>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </section>
