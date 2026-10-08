@@ -13,7 +13,7 @@ const portfolioData = {
     email: "elyas.rabhiu.etu@univ-lille.fr",
     linkedin: "https://www.linkedin.com/in/portfolio-89b72a382/",
     github: "https://github.com/elyas59000", 
-    cv: "/portfolio/cv.pdf"
+    cv: "./cv.pdf"
   },
   formation: [
     {
@@ -47,7 +47,22 @@ const portfolioData = {
       tech: ["Laravel", "PHP", "Eloquent ORM", "MySQL", "Architecture MVC", "algorithme FIFO"],
       repo: "https://github.com/elyas59000/supermoto-garage",
       demo: null,
+<<<<<<< HEAD
       image: "/portfolio/supermoto.png"
+=======
+      image: "./supermoto.png",
+      contexte: "Développement d'une application métier centralisée répondant à des contraintes strictes d'intégrité des données.",
+      equipe: "Projet mené en totale autonomie.",
+      role: "Modélisation de la base de données (9 tables), création des migrations, sécurisation des routes et implémentation des contrôleurs CRUD pour l'ensemble des entités.",
+      resultats: "Un backend performant et modulaire permettant une traçabilité complète des interventions, des stocks de pièces et des fiches clients.",
+      hardSkills: ["Maîtrise du pattern MVC avec le framework Laravel.", "Conception de requêtes complexes et relations via Eloquent ORM.", "Gestion avancée des contraintes d'intégrité référentielle."],
+      softSkills: ["Autonomie : Capacité à mener un projet technique de bout en bout.", "Rigueur : Structuration propre et maintenable du code."],
+      analyseReflexive: {
+        appris: "L'utilisation d'un framework moderne accélère considérablement le développement sécurisé de structures de données complexes.",
+        difficultes: "Assurer la cohérence du CRUD sur des tables fortement interdépendantes. J'ai surmonté ce défi en implémentant des transactions de base de données, évitant ainsi les écritures partielles en cas d'erreur.",
+        differemment: "Pour une future itération, j'envisagerais de concevoir une API REST découplée afin de faciliter l'intégration avec n'importe quel client frontend moderne."
+      }
+>>>>>>> 6f4cdb7536f0e70be6a12a702924c3d4bb1fc317
     },
     {
       id: 2,
@@ -74,7 +89,22 @@ const portfolioData = {
       tech: ["Debian CLI", "PostgreSQL", "Matrix Synapse", "Nginx", "Tunnels SSH"],
       repo: "https://github.com/elyas59000/SAE-DEPLOIEMENT-MATRIX",
       demo: null,
+<<<<<<< HEAD
       image: "/portfolio/matrix.jpg"
+=======
+      image: "./matrix.jpg",
+      contexte: "Mise en production d'une infrastructure réseau pour héberger un service de communication critique.",
+      equipe: "Travail en binome avec revues techniques.",
+      role: "Responsable de l'installation sous Debian, de la migration d'une base de données SQLite vers PostgreSQL, et de la configuration du reverse proxy Nginx.",
+      resultats: "Un serveur de communication parfaitement fonctionnel, sécurisé et accessible depuis l'extérieur.",
+      hardSkills: ["Administration système Linux avancée en ligne de commande.", "Configuration réseau, proxying et gestion des certificats SSL.", "Migration de bases de données en environnement de production."],
+      softSkills: ["Résolution de problèmes : Diagnostic méthodique via l'analyse des logs système.", "Adaptabilité : Prise en main rapide de documentations techniques denses."],
+      analyseReflexive: {
+        appris: "L'importance cruciale de la sécurité périphérique et de la précision dans la configuration des règles de routage.",
+        difficultes: "Lors des tests, les connexions externes via les tunnels SSH échouaient. L'analyse des configurations m'a permis d'identifier qu'il manquait l'adresse '0.0.0.0' dans les paramètres de transfert local SSH (.ssh/config), étape indispensable pour autoriser le trafic entrant.",
+        differemment: "Je privilégierais aujourd'hui une approche par conteneurisation (Docker Compose) pour automatiser et isoler les différents services (Synapse, Postgres, Nginx)."
+      }
+>>>>>>> 6f4cdb7536f0e70be6a12a702924c3d4bb1fc317
     },
     {
       id: 5,
@@ -83,7 +113,22 @@ const portfolioData = {
       tech: ["Java", "JavaFX", "JUnit", "Git"],
       repo: "https://github.com/elyas59000/projet-labyrinthe",
       demo: "https://labyrintheweb.netlify.app/#",
+<<<<<<< HEAD
       image: "/portfolio/labyrinthe.png"
+=======
+      image: "./labyrinthe.png",
+      contexte: "Création d'un moteur de jeu nécessitant une couverture de tests exhaustive et des algorithmes de parcours fiables.",
+      equipe: "Équipe de 3 développeurs sous méthodologie Agile.",
+      role: "En charge de la Qualité Logicielle. Implémentation du moteur de tests unitaires et de l'algorithme BFS pour certifier la solvabilité des niveaux.",
+      resultats: "Couverture de tests supérieure à 70% et un générateur de labyrinthe garantissant l'absence d'impasses bloquantes.",
+      hardSkills: ["Implémentation d'algorithmes de parcours de graphes (BFS).", "Mise en place de tests unitaires avancés (utilisation de la réflexion Java).", "Conception MVC en environnement JavaFX."],
+      softSkills: ["Travail en équipe : Synchronisation du code via Git.", "Communication technique : Explication des choix algorithmiques à l'équipe."],
+      analyseReflexive: {
+        appris: "Adopter une approche orientée tests (TDD) dès le début du projet permet d'identifier les régressions instantanément et facilite le refactoring.",
+        difficultes: "Empêcher l'algorithme procédural de créer des boucles infinies. Nous avons modélisé un cycle de vie strict pour la génération avec des conditions d'arrêt précises.",
+        differemment: "L'intégration d'un pipeline CI/CD (GitLab CI) aurait permis d'automatiser l'exécution des tests à chaque commit."
+      }
+>>>>>>> 6f4cdb7536f0e70be6a12a702924c3d4bb1fc317
     },
     {
       id: 6,
@@ -101,7 +146,22 @@ const portfolioData = {
       tech: ["Java", "JavaFX", "Algorithmique des Graphes", "UML", "Figma"],
       repo: "https://github.com/elyas59000/SAE-appariement",
       demo: "https://www.figma.com/design/bF0yAhsahym878TCPDJnVv/maquette-du-projet-appariement?node-id=0-1&t=eDy4Y36cYSRr2FbW-1",
+<<<<<<< HEAD
       image: "/portfolio/sae-appariement.png"
+=======
+      image: "./sae-appariement.png",
+      contexte: "Développement d'un outil d'aide à la décision basé sur des structures de graphes bipartis valués.",
+      equipe: "Groupe de 4 développeurs.",
+      role: "Conception de l'expérience utilisateur (UX/UI) via Figma, développement des vues JavaFX et intégration avec le moteur algorithmique backend.",
+      resultats: "Une interface fluide permettant de traiter et d'afficher instantanément les associations optimales pour des centaines de profils.",
+      hardSkills: ["Maquettage UI/UX professionnel.", "Modélisation métier via diagrammes UML.", "Manipulation de structures de données complexes."],
+      softSkills: ["Gestion du temps : Respect d'un planning de livraisons itératives.", "Négociation technique : Alignement des besoins IHM avec les contraintes de performance du backend."],
+      analyseReflexive: {
+        appris: "La traduction de besoins algorithmiques abstraits en une interface utilisateur claire et intuitive.",
+        difficultes: "Éviter que les calculs complexes ne gèlent l'interface graphique. Problème résolu par le traitement asynchrone des tâches (découplage des threads).",
+        differemment: "Allouer plus de temps à la phase de conception architecturale (UML) en amont pour éviter les redéfinitions de classes en cours de développement."
+      }
+>>>>>>> 6f4cdb7536f0e70be6a12a702924c3d4bb1fc317
     }
   ]
 };
